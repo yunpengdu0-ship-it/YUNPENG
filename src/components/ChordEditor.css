@@ -1,0 +1,166 @@
+.chord-editor {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chord-editor-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2196F3;
+}
+
+.chord-editor-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.chord-editor-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 声部列表 */
+.voices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.voice-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.voice-item.editing {
+  background: #e3f2fd;
+  border-color: #2196F3;
+}
+
+.voice-label {
+  flex: 0 0 100px;
+  font-weight: 600;
+  color: #555;
+}
+
+.voice-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.note-display {
+  flex: 1;
+  padding: 8px 16px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 80px;
+  text-align: center;
+}
+
+.note-display:hover {
+  border-color: #2196F3;
+  background: #f0f8ff;
+}
+
+.delete-button {
+  padding: 8px 12px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  min-width: 40px;
+}
+
+.delete-button:hover:not(:disabled) {
+  background: #d32f2f;
+}
+
+.delete-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* 音符输入面板 */
+.note-input-panel {
+  padding: 20px;
+  background: #f9f9f9;
+  border: 2px solid #2196F3;
+  border-radius: 8px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.panel-header h4 {
+  margin: 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.cancel-button {
+  padding: 6px 16px;
+  background: #757575;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cancel-button:hover {
+  background: #616161;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+  .voice-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .voice-label {
+    margin-bottom: 8px;
+  }
+
+  .voice-content {
+    width: 100%;
+  }
+}

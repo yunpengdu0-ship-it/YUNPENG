@@ -1,0 +1,377 @@
+.exercise-view {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 练习题头部 */
+.exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #4CAF50;
+}
+
+.exercise-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.exercise-title h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.8em;
+}
+
+.exercise-key {
+  padding: 6px 12px;
+  background: #e3f2fd;
+  color: #1976d2;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.exercise-difficulty {
+  color: #ff9800;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* 练习题说明 */
+.exercise-instructions {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-left: 4px solid #4CAF50;
+  border-radius: 6px;
+}
+
+.exercise-instructions h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.exercise-instructions p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.05em;
+}
+
+/* 约束条件 */
+.exercise-constraints {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff3e0;
+  border-left: 4px solid #ff9800;
+  border-radius: 6px;
+}
+
+.exercise-constraints h4 {
+  margin: 0 0 10px 0;
+  color: #e65100;
+  font-size: 1.1em;
+}
+
+.exercise-constraints ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.exercise-constraints li {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* 提示信息 */
+.exercise-hints {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #e8f5e9;
+  border-left: 4px solid #4CAF50;
+  border-radius: 6px;
+}
+
+.exercise-hints h4 {
+  margin: 0 0 10px 0;
+  color: #2e7d32;
+  font-size: 1.1em;
+}
+
+.exercise-hints ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.exercise-hints li {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* 进度指示 */
+.exercise-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+.completed-badge {
+  padding: 4px 12px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+/* 五线谱显示 */
+.exercise-staff {
+  margin-bottom: 30px;
+}
+
+.exercise-staff h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 1.3em;
+}
+
+/* 验证错误显示 */
+.exercise-errors {
+  margin-bottom: 20px;
+}
+
+/* 约束违规显示 */
+.exercise-constraint-violations {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff3e0;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+}
+
+.exercise-constraint-violations h4 {
+  margin: 0 0 10px 0;
+  color: #e65100;
+  font-size: 1.1em;
+}
+
+.exercise-constraint-violations ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.exercise-constraint-violations li {
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.violation-required {
+  color: #d32f2f;
+}
+
+.violation-forbidden {
+  color: #d32f2f;
+}
+
+.violation-length {
+  color: #f57c00;
+}
+
+/* 和弦编辑器 */
+.exercise-editor {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #fafafa;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.editor-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.delete-chord-button {
+  padding: 8px 16px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-chord-button:hover {
+  background: #d32f2f;
+}
+
+/* 操作按钮 */
+.exercise-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.exercise-actions button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-chord-button {
+  background: #2196F3;
+  color: white;
+}
+
+.add-chord-button:hover:not(:disabled) {
+  background: #1976d2;
+}
+
+.submit-button {
+  background: #4CAF50;
+  color: white;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #45a049;
+}
+
+.reset-button {
+  background: #757575;
+  color: white;
+}
+
+.reset-button:hover {
+  background: #616161;
+}
+
+.show-solution-button {
+  background: #ff9800;
+  color: white;
+}
+
+.show-solution-button:hover {
+  background: #f57c00;
+}
+
+.skip-button {
+  background: #9e9e9e;
+  color: white;
+}
+
+.skip-button:hover {
+  background: #757575;
+}
+
+.exercise-actions button:disabled {
+  background: #e0e0e0;
+  color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+/* 参考答案显示 */
+.exercise-solution {
+  margin-top: 30px;
+  padding: 20px;
+  background: #e8f5e9;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.exercise-solution h3 {
+  margin: 0 0 15px 0;
+  color: #2e7d32;
+  font-size: 1.3em;
+}
+
+.solution-note {
+  margin: 15px 0 0 0;
+  padding: 10px;
+  background: white;
+  border-left: 4px solid #4CAF50;
+  border-radius: 4px;
+  color: #555;
+  font-style: italic;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .exercise-view {
+    padding: 15px;
+  }
+
+  .exercise-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .exercise-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .exercise-title h2 {
+    font-size: 1.5em;
+  }
+
+  .exercise-actions {
+    flex-direction: column;
+  }
+
+  .exercise-actions button {
+    width: 100%;
+  }
+
+  .editor-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .delete-chord-button {
+    width: 100%;
+  }
+}

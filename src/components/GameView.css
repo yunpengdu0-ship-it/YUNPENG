@@ -1,0 +1,137 @@
+.game-view {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 加载状态 */
+.game-view.loading {
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 头部 */
+.game-header {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 2em;
+}
+
+.game-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #667eea;
+}
+
+/* 主内容区 */
+.game-main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* 练习题容器 */
+.exercise-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  color: #667eea;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* 页脚 */
+.game-footer {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.game-footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .game-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .game-header h1 {
+    font-size: 1.5em;
+  }
+
+  .game-stats {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .game-main {
+    padding: 15px;
+  }
+
+  .stat-value {
+    font-size: 1.5em;
+  }
+}

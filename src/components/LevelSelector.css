@@ -1,0 +1,284 @@
+.level-selector {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 头部 */
+.level-selector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #2196F3;
+}
+
+.level-selector-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.8em;
+}
+
+.level-stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.stat-value {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #2196F3;
+}
+
+/* 图例 */
+.level-legend {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+.legend-icon.completed {
+  background: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.legend-icon.unlocked {
+  background: #2196F3;
+  border-color: #2196F3;
+}
+
+.legend-icon.locked {
+  background: #e0e0e0;
+  border-color: #bdbdbd;
+}
+
+.legend-icon.current {
+  background: #ff9800;
+  border-color: #ff9800;
+  box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.3);
+}
+
+/* 章节 */
+.level-chapters {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.chapter-section {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fafafa;
+}
+
+.chapter-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.chapter-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.3em;
+}
+
+.chapter-title {
+  color: #666;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/* 关卡网格 */
+.chapter-levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 12px;
+}
+
+/* 关卡按钮 */
+.level-item {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 3px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 0;
+}
+
+.level-item:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.level-item:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* 已完成状态 */
+.level-item.completed {
+  background: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+
+.level-item.completed:hover:not(:disabled) {
+  background: #45a049;
+  border-color: #45a049;
+}
+
+/* 已解锁状态 */
+.level-item.unlocked {
+  background: #2196F3;
+  border-color: #2196F3;
+  color: white;
+}
+
+.level-item.unlocked:hover:not(:disabled) {
+  background: #1976d2;
+  border-color: #1976d2;
+}
+
+/* 锁定状态 */
+.level-item.locked {
+  background: #e0e0e0;
+  border-color: #bdbdbd;
+  color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+/* 当前关卡 */
+.level-item.current {
+  box-shadow: 0 0 0 4px rgba(255, 152, 0, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 4px rgba(255, 152, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(255, 152, 0, 0.2);
+  }
+}
+
+/* 关卡编号 */
+.level-number {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* 完成标记 */
+.level-check {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 1.2em;
+}
+
+/* 锁定图标 */
+.level-lock {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  font-size: 1em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .level-selector {
+    padding: 15px;
+  }
+
+  .level-selector-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .level-stats {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .chapter-levels {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 8px;
+  }
+
+  .level-item {
+    font-size: 1em;
+  }
+
+  .level-number {
+    font-size: 1.2em;
+  }
+
+  .level-legend {
+    gap: 10px;
+  }
+
+  .legend-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chapter-levels {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+
+  .level-selector-header h2 {
+    font-size: 1.5em;
+  }
+
+  .chapter-header h3 {
+    font-size: 1.1em;
+  }
+}

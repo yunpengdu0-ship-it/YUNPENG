@@ -1,0 +1,325 @@
+{
+  "version": "1.0.0",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "三和弦的原位",
+      "description": "学习三和弦的基本连接，掌握声部进行的基本规则",
+      "concepts": ["三和弦", "原位", "声部进行", "平行五八度"],
+      "exercises": [
+        {
+          "id": "1-1",
+          "chapter": 1,
+          "number": 1,
+          "instructions": "完成以下和弦进行：I - IV - V - I。注意避免平行五度和平行八度。",
+          "key": "C major",
+          "startingChords": [
+            {
+              "notes": [
+                { "pitch": "G", "octave": 4, "duration": "w" },
+                { "pitch": "E", "octave": 4, "duration": "w" },
+                { "pitch": "C", "octave": 4, "duration": "w" },
+                { "pitch": "C", "octave": 3, "duration": "w" }
+              ],
+              "romanNumeral": "I",
+              "inversion": 0
+            }
+          ],
+          "expectedLength": 4,
+          "difficulty": 1,
+          "hints": [
+            "保持共同音不动",
+            "其他声部以最近的方向进行",
+            "检查是否有平行五度或八度"
+          ],
+          "solution": {
+            "chords": [
+              {
+                "notes": [
+                  { "pitch": "G", "octave": 4, "duration": "w" },
+                  { "pitch": "E", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "I",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "A", "octave": 4, "duration": "w" },
+                  { "pitch": "F", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "F", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "IV",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "G", "octave": 4, "duration": "w" },
+                  { "pitch": "F", "octave": 4, "duration": "w" },
+                  { "pitch": "D", "octave": 4, "duration": "w" },
+                  { "pitch": "G", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "V",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "G", "octave": 4, "duration": "w" },
+                  { "pitch": "E", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "I",
+                "inversion": 0
+              }
+            ],
+            "key": "C major"
+          }
+        },
+        {
+          "id": "1-2",
+          "chapter": 1,
+          "number": 2,
+          "instructions": "完成以下和弦进行：I - V - VI - IV - I。这是一个稍长的进行，注意保持声部的流畅性。",
+          "key": "C major",
+          "startingChords": [
+            {
+              "notes": [
+                { "pitch": "E", "octave": 4, "duration": "w" },
+                { "pitch": "C", "octave": 4, "duration": "w" },
+                { "pitch": "G", "octave": 3, "duration": "w" },
+                { "pitch": "C", "octave": 3, "duration": "w" }
+              ],
+              "romanNumeral": "I",
+              "inversion": 0
+            }
+          ],
+          "expectedLength": 5,
+          "difficulty": 2,
+          "hints": [
+            "注意VI级和弦的连接",
+            "保持声部的平稳进行",
+            "避免跳进过大"
+          ],
+          "solution": {
+            "chords": [
+              {
+                "notes": [
+                  { "pitch": "E", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "G", "octave": 3, "duration": "w" },
+                  { "pitch": "C", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "I",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "D", "octave": 4, "duration": "w" },
+                  { "pitch": "B", "octave": 3, "duration": "w" },
+                  { "pitch": "G", "octave": 3, "duration": "w" },
+                  { "pitch": "G", "octave": 2, "duration": "w" }
+                ],
+                "romanNumeral": "V",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "E", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "A", "octave": 3, "duration": "w" },
+                  { "pitch": "A", "octave": 2, "duration": "w" }
+                ],
+                "romanNumeral": "VI",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "F", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "A", "octave": 3, "duration": "w" },
+                  { "pitch": "F", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "IV",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "E", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "G", "octave": 3, "duration": "w" },
+                  { "pitch": "C", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "I",
+                "inversion": 0
+              }
+            ],
+            "key": "C major"
+          }
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "三和弦的转位",
+      "description": "学习三和弦的第一转位和第二转位",
+      "concepts": ["第一转位", "第二转位", "六和弦", "四六和弦"],
+      "exercises": [
+        {
+          "id": "2-1",
+          "chapter": 2,
+          "number": 1,
+          "instructions": "完成以下和弦进行，使用第一转位：I - IV6 - V - I。",
+          "key": "C major",
+          "startingChords": [
+            {
+              "notes": [
+                { "pitch": "G", "octave": 4, "duration": "w" },
+                { "pitch": "E", "octave": 4, "duration": "w" },
+                { "pitch": "C", "octave": 4, "duration": "w" },
+                { "pitch": "C", "octave": 3, "duration": "w" }
+              ],
+              "romanNumeral": "I",
+              "inversion": 0
+            }
+          ],
+          "expectedLength": 4,
+          "difficulty": 2,
+          "hints": [
+            "第一转位的低音是和弦的三音",
+            "注意低音的进行",
+            "保持上三声部的平稳"
+          ],
+          "solution": {
+            "chords": [
+              {
+                "notes": [
+                  { "pitch": "G", "octave": 4, "duration": "w" },
+                  { "pitch": "E", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "I",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "A", "octave": 4, "duration": "w" },
+                  { "pitch": "F", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "A", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "IV6",
+                "inversion": 1
+              },
+              {
+                "notes": [
+                  { "pitch": "G", "octave": 4, "duration": "w" },
+                  { "pitch": "F", "octave": 4, "duration": "w" },
+                  { "pitch": "D", "octave": 4, "duration": "w" },
+                  { "pitch": "G", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "V",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "G", "octave": 4, "duration": "w" },
+                  { "pitch": "E", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "I",
+                "inversion": 0
+              }
+            ],
+            "key": "C major"
+          }
+        },
+        {
+          "id": "2-2",
+          "chapter": 2,
+          "number": 2,
+          "instructions": "完成以下和弦进行，使用第二转位：I - V64 - I6 - V - I。",
+          "key": "C major",
+          "startingChords": [
+            {
+              "notes": [
+                { "pitch": "E", "octave": 4, "duration": "w" },
+                { "pitch": "C", "octave": 4, "duration": "w" },
+                { "pitch": "G", "octave": 3, "duration": "w" },
+                { "pitch": "C", "octave": 3, "duration": "w" }
+              ],
+              "romanNumeral": "I",
+              "inversion": 0
+            }
+          ],
+          "expectedLength": 5,
+          "difficulty": 3,
+          "hints": [
+            "第二转位的低音是和弦的五音",
+            "四六和弦通常需要解决",
+            "注意终止式的处理"
+          ],
+          "solution": {
+            "chords": [
+              {
+                "notes": [
+                  { "pitch": "E", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "G", "octave": 3, "duration": "w" },
+                  { "pitch": "C", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "I",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "D", "octave": 4, "duration": "w" },
+                  { "pitch": "B", "octave": 3, "duration": "w" },
+                  { "pitch": "G", "octave": 3, "duration": "w" },
+                  { "pitch": "D", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "V64",
+                "inversion": 2
+              },
+              {
+                "notes": [
+                  { "pitch": "E", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "G", "octave": 3, "duration": "w" },
+                  { "pitch": "E", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "I6",
+                "inversion": 1
+              },
+              {
+                "notes": [
+                  { "pitch": "D", "octave": 4, "duration": "w" },
+                  { "pitch": "B", "octave": 3, "duration": "w" },
+                  { "pitch": "G", "octave": 3, "duration": "w" },
+                  { "pitch": "G", "octave": 2, "duration": "w" }
+                ],
+                "romanNumeral": "V",
+                "inversion": 0
+              },
+              {
+                "notes": [
+                  { "pitch": "E", "octave": 4, "duration": "w" },
+                  { "pitch": "C", "octave": 4, "duration": "w" },
+                  { "pitch": "G", "octave": 3, "duration": "w" },
+                  { "pitch": "C", "octave": 3, "duration": "w" }
+                ],
+                "romanNumeral": "I",
+                "inversion": 0
+              }
+            ],
+            "key": "C major"
+          }
+        }
+      ]
+    }
+  ]
+}

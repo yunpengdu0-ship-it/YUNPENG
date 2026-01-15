@@ -1,0 +1,142 @@
+.note-input {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note-input-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.note-input-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.note-input-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-section label {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* 按钮通用样式 */
+.pitch-buttons,
+.accidental-buttons,
+.octave-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pitch-button,
+.accidental-button,
+.octave-button {
+  padding: 10px 16px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: all 0.2s;
+  min-width: 45px;
+}
+
+.pitch-button:hover:not(:disabled),
+.accidental-button:hover:not(:disabled),
+.octave-button:hover:not(:disabled) {
+  border-color: #4CAF50;
+  background: #f1f8f4;
+}
+
+.pitch-button.selected,
+.accidental-button.selected,
+.octave-button.selected {
+  background: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+.octave-button.unavailable {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pitch-button:disabled,
+.accidental-button:disabled,
+.octave-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* 当前选择预览 */
+.current-selection {
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.selection-label {
+  font-weight: 600;
+  color: #666;
+}
+
+.selection-value {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #333;
+}
+
+.selection-warning {
+  color: #f44336;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* 确认按钮 */
+.confirm-button {
+  padding: 12px 24px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.confirm-button:hover:not(:disabled) {
+  background: #45a049;
+}
+
+.confirm-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* 变音记号按钮特殊样式 */
+.accidental-button {
+  font-size: 1.2em;
+}
